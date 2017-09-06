@@ -20,7 +20,7 @@
 @property(nonatomic, strong)LXQRCodeView     *preView;
 @property(nonatomic, strong)AVCaptureDevice *device;
 @property(nonatomic, assign)BOOL isONFlash;
-
+@property(nonatomic, strong)NSArray *metadataObjects;
 @end
 
 @implementation LXQRCodeSDKViewController
@@ -181,11 +181,7 @@
     //判断是否有数据
     if (metadataObjects != nil && [metadataObjects count] > 0) {
         [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-        AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
-        //判断回传的数据类型
-        if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {//二维码
-            
-        }
+        self.metadataObjects = metadataObjects;
     }
 }
 
@@ -194,6 +190,11 @@
     [self.session stopRunning];
     self.session = nil;
     [self.previewLayer removeFromSuperlayer];
+    AVMetadataMachineReadableCodeObject *metadataObj = [self.metadataObjects lastObject];
+    //判断回传的数据类型
+    if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {//二维码
+        
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
