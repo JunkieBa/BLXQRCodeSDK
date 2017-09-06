@@ -1,0 +1,6 @@
+framework module BLXQRCodeSDK {
+  umbrella header "BLXQRCodeSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
