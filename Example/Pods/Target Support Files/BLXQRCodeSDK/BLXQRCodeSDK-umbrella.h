@@ -16,7 +16,6 @@
 #import "QRCodeSDK.h"
 #import "UIImage+LXLoadingImage.h"
 #import "LXQRCodeView.h"
-#import "RCodeSDK.h"
 FOUNDATION_EXPORT double BLXQRCodeSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char BLXQRCodeSDKVersionString[];
 
