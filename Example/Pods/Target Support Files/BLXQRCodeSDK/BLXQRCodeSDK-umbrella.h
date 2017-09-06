@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "BLXQRCodeConfig.h"
+#import "BLXQRCodeSDK.h"
+#import "LXQRCodeSDKViewController.h"
+#import "QRCodeSDK.h"
+#import "UIImage+LXLoadingImage.h"
+#import "LXQRCodeView.h"
 
 FOUNDATION_EXPORT double BLXQRCodeSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char BLXQRCodeSDKVersionString[];

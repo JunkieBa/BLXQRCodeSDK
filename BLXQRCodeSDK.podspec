@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BLXQRCodeSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BLXQRCodeSDK.'
+  s.summary          = 'A Scan code for app'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,11 +32,13 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'BLXQRCodeSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'BLXQRCodeSDK' => ['BLXQRCodeSDK/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'BLXQRCodeSDK' => ['BLXQRCodeSDK/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
+  s.dependency 'UIColor-HexString'
 end

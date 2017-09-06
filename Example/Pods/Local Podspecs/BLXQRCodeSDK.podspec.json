@@ -1,7 +1,7 @@
 {
   "name": "BLXQRCodeSDK",
   "version": "0.1.0",
-  "summary": "A short description of BLXQRCodeSDK.",
+  "summary": "A Scan code for app",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/JunkieBa/BLXQRCodeSDK",
   "license": {
@@ -18,5 +18,21 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BLXQRCodeSDK/Classes/**/*"
+  "source_files": "BLXQRCodeSDK/Classes/**/*",
+  "resource_bundles": {
+    "BLXQRCodeSDK": [
+      "BLXQRCodeSDK/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "Masonry": [
+
+    ],
+    "UIColor-HexString": [
+
+    ]
+  }
 }

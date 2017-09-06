@@ -7,12 +7,18 @@
 //
 
 #import "BLXQRCodeSDKAppDelegate.h"
-
+#import "BLXQRCodeSDKViewController.h"
 @implementation BLXQRCodeSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    BLXQRCodeSDKViewController *mainVC = [[BLXQRCodeSDKViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
