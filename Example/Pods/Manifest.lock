@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - BLXQRCodeSDK (1.0.0):
+  - BLXQRCodeSDK (1.0.1):
     - AFNetworking (~> 2.3)
     - Masonry
     - UIColor-HexString
@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  BLXQRCodeSDK: d9280e232f11efdf66fb7c475288511e6281a9ce
+  BLXQRCodeSDK: 060667d578cf8a3b201c97e98e2ea12508747bdc
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
@@ -61,4 +61,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2d7b00decdd6de493ad92a2f91de98325121461b
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1
